@@ -1,0 +1,263 @@
+.categories{
+    display:flex;
+    height:90vh;
+    gap: 10px;
+    margin: 10px;
+    width:100vw;
+    // margin-bottom:600px;
+    // flex-wrap:wrap;
+    @media(max-width:768px){
+        display:flex;
+        flex-wrap:wrap
+        //   flex-direction: column;
+        //   flex-wrap:wrap; 
+        // display:grid;
+        
+    }
+
+
+
+    .col{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        // height:100%;
+        height:90vh;
+        @media(max-width:768px){
+           flex:1;
+        }
+
+    }
+    .smallScrCols{
+        display: flex;
+        width:100%;
+        height: 100vh;
+        gap: 10px;
+        margin: 10px;
+    //   flex:1;
+        object-fit: cover;
+        @media(max-width:768px){
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction: row;
+            // flex:1;
+            width:100%;
+            gap:3px;
+            height:40vh;
+            .smlScrColTop{
+                flex:1;
+                display:flex;
+                flex-direction: column;
+                gap:10px;
+                width: 50%;
+                @media(max-width:768px){
+                    flex:1;
+                height:40vh;
+                width: 40vw;
+                flex-direction: column;
+                }
+
+                // flex:1;
+                // height:40vh;
+                // width: 40vw;
+                // flex-direction: column;
+                // row for small screens (two images on top of each other (sale&women))
+                .row{
+                    // border: 3px solid yellow;
+                    height:100%;
+                    flex:1;
+                    @media(max-width:768px){
+                        flex:0.5;
+                    }
+                    
+                }
+                // min-height:500px;
+                // .smlRow{
+                //     height:80vh;
+                //     border:1px yellow solid;
+                // }
+            }
+
+           
+
+            .smlScrColBottom{
+                // height:90vh;
+                flex:1;
+                // width:50%;
+                // object-fit: cover;
+
+                overflow:hidden;
+                @media(max-width:768px){
+                
+                    display:flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    flex:1;
+                    width:80vw;
+                
+                }
+                // .rows{
+                //     border: 3px solid yellow;
+
+                //     height:90vh;
+                // }
+                // display:flex;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+                // flex:1;
+                // width:80vw;
+                .longCol{
+                    flex:0.5;
+                    display: flex;
+                    gap: 10px;
+                    position: relative;
+                    overflow: hidden;
+                    height:100%;    
+                    width:200px;
+                    align-items:center;
+
+                    @media(max-width:768px){
+                        width:100%;
+                        flex:1;
+                        height:40vh;
+                    }
+                    // img{
+                    //     height:100%;
+                    // }
+                    
+                }
+                .row{
+                    // border: 3px solid green;
+
+                    @media(max-width:768px){
+                        height:40vh;
+                        // border: 3px solid yellow;
+
+
+                    }
+                }
+            }
+
+             .smallScrCols2{
+                // width:50%;
+                display:flex;
+                flex-direction: column;
+                height: 50%;
+                @media(max-width:768px){}
+
+                display:flex;
+                height:40vh;
+                flex-direction: column;
+            }
+            
+
+         }
+ 
+    }
+    .cols{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        gap:10px;
+        // height:100%;
+        // height:90vh;
+        @media(max-width:768px){
+           flex:1;
+        }
+
+    }
+
+    .col-l{
+        flex:2;
+        display: flex;
+        @media(max-width:768px){
+           flex:0.50; 
+           justify-content: center;
+           height:40vh;
+
+        }
+        .smlScrTopRow{
+            @media(max-width:768px){
+                flex:1; 
+                display:flex;
+                width:100%;
+                justify-content: center;
+                height:100%;
+     
+             }
+        }
+
+
+    }
+    .rows{
+        flex:0.5;
+        // border: 3px solid yellow;
+        // flex:1;
+        display:flex;
+        // flex-direction:column;
+        gap:10px;
+        position: relative;
+        overflow: hidden;
+    }
+// this is the one
+    .row{
+        flex:0.5;
+        // border: 3px solid yellow;
+        // flex:1;
+        display:flex;
+        // flex-direction:column;
+        gap:10px;
+        position: relative;
+        overflow: hidden;
+        @media(max-width:768px){
+        //    flex:0.5;
+        }
+
+       .smlScrColBottom{
+        width:50vw;
+       } 
+
+
+        button{
+            position: absolute;
+            min-width:50px;
+            width: fit-content;
+            height: 50px;
+            padding: 10px;
+            top: 0;
+            bottom:0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            cursor:pointer;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.726);
+            text-transform: uppercase;
+            font-weight: 50;
+            // border: 3px solid black;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            display:flex;
+            justify-content: center;
+            @media(max-width:768px){
+                display:flex;
+                justify-content: center;
+            }
+            // .Hbutton{
+            //     margin-bottom: auto;
+            // }
+            link{
+                border: 1px solid green;
+            }
+    
+        }
+
+    }
+}

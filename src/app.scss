@@ -1,0 +1,19 @@
+.app{
+    width:100vw;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    @media (max-width: 768px) {
+        display:flex;
+        flex-direction: column;
+        width:100vw;
+        // background-color: red;
+    }
+    
+    .link{
+        color: inherit;
+        text-decoration: none;
+        overflow-x: hidden;
+
+    }
+}

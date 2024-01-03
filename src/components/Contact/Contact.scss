@@ -1,0 +1,101 @@
+.contact{
+    background-color: #2879fe;
+    color:white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    
+    @media(max-width:768px){
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        // flex-direction: column;
+        // flex-wrap:wrap;
+        // background-color:red;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        @media(max-width:768px){
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            // flex-direction: column;
+            // flex-wrap:wrap;
+            padding:5px;
+            width:100%;
+            // background-color:red;
+            font-size: 9px;
+        }
+        span{
+            display:flex;
+            align-items: start;
+            margin-bottom:15px;
+            // color:black;
+            font-size: 1rem;
+        }
+        button{
+            @media(max-width:768px){
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                margin-top:5px;
+                // gap: 3px;
+    
+            }
+        }
+    
+    
+        input{
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            @media(max-width:768px){
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                // flex-direction: column;
+                // flex-wrap:wrap;
+                // background-color:red;
+            }
+        
+        
+            
+        }
+        button{
+            padding: 10px;
+            color: white;
+            background: #333;
+            border-radius: 0 5px 5px 0;
+            border:none;
+            @media(max-width:768px){
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                // flex-direction: column;
+                // flex-wrap:wrap;
+                // background-color:red;
+            }
+        
+        
+        }
+
+        .icons{
+            display:flex;
+            gap:10px;
+            @media(max-width:768px){
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                // flex-direction: column;
+                flex-wrap:wrap;
+                // background-color:red;
+            }
+        
+        
+        }
+    }
+}

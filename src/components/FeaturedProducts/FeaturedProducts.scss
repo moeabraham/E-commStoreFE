@@ -1,0 +1,55 @@
+.featuredProducts{
+    margin: 100px 200px;
+    width:100%;
+    margin: 0 auto;
+    // padding:50px;
+    overflow-x: hidden;
+
+    .top{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 30px;
+        // position:relative;
+
+        h1{
+            flex: 1;
+            text-transform: capitalize;
+            margin-left:0;
+            padding:10px;
+            
+            // position:absolute;
+        }
+    
+        p{
+            flex: 3;
+            color: gray;
+            font-size:15px
+            // position: absolute;
+            
+        }
+        
+
+
+    }
+    
+    .bottom{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        @media(max-width:768px){
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+    }
+
+
+}
+
+
